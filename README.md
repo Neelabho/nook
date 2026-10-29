@@ -11,7 +11,7 @@
 <p align="center">
   <img src="docs/images/nook-demo.gif" width="800" alt="Nook demo: pointing at the notch opens a panel with a file Shelf, a local AI assistant and Spotify controls">
 </p>
-<p align="center"><a href="docs/media/nook-demo.mp4"><b>Watch with sound</b></a> (30 s, MP4)</p>
+<p align="center"><a href="https://github.com/Neelabho/nook/raw/main/docs/media/nook-demo.mp4"><b>Download the video with sound</b></a> (30 s, MP4, 7.4 MB)</p>
 
 | | |
 |---|---|
