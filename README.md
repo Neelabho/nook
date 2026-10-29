@@ -8,9 +8,10 @@
 ![No telemetry](https://img.shields.io/badge/telemetry-none-brightgreen)
 ![Dependencies: 0](https://img.shields.io/badge/dependencies-0-brightgreen)
 
-<!-- Add a short screen recording here, it's the single best way to show what Nook does:
-<p align="center"><img src="docs/images/nook-demo.gif" width="720" alt="Nook opening from the notch"></p>
--->
+<p align="center">
+  <img src="docs/images/nook-demo.gif" width="800" alt="Nook demo: pointing at the notch opens a panel with a file Shelf, a local AI assistant and Spotify controls">
+</p>
+<p align="center"><a href="docs/media/nook-demo.mp4"><b>Watch with sound</b></a> (30 s, MP4)</p>
 
 | | |
 |---|---|
