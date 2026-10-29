@@ -31,10 +31,19 @@ Native Swift 6 · SwiftUI + AppKit · App Sandbox · hardened runtime · no thir
 
 ## Requirements
 
-- A Mac with a notch running **macOS 15 or later** (Liquid Glass styling on macOS 26+). Macs without a notch get a slim strip at the top of the screen instead.
-- **Xcode 26** or the matching **Command Line Tools** (Swift 6.2 or newer) to build.
+- An **Apple silicon** Mac with a notch running **macOS 15 or later** (Liquid Glass styling on macOS 26+). Macs without a notch get a slim strip at the top of the screen instead.
 - Optional: [Ollama] with a local model for the Assistant (`ollama pull qwen3:8b`).
 - Optional: the Spotify desktop app for Music.
+- To build from source: **Xcode 26** or the matching **Command Line Tools** (Swift 6.2 or newer).
+
+## Download
+
+1. Download **Nook-1.0.0.zip** from the [latest release](https://github.com/Neelabho/nook/releases/latest).
+2. Unzip it and drag **Nook.app** into **Applications**.
+3. Open Nook. Because this build isn't notarized by Apple yet, macOS blocks the first launch. Go to **System Settings › Privacy & Security**, scroll down to the message about Nook, click **Open Anyway** and confirm. You only need to do this once.
+4. Nook appears in the menu bar. Point at the notch or press **⌥⌘N**.
+
+Prefer to check what you're running? Every release lists the zip's SHA-256 so you can verify it with `shasum -a 256 Nook-1.0.0.zip`, or build it yourself from source below.
 
 ## Install from source
 
