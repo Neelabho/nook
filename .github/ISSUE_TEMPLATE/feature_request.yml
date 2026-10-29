@@ -1,0 +1,22 @@
+name: Feature request
+description: Suggest an idea for Nook
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like Nook to do?
+    validations:
+      required: true
+  - type: checkboxes
+    id: principles
+    attributes:
+      label: Nook's principles
+      options:
+        - label: This works without telemetry, cloud services or third-party dependencies (or I've explained why it can't).

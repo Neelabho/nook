@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-test:
+    # Nook needs the macOS 26 SDK (Liquid Glass) and Swift 6.2+ (@concurrent).
+    runs-on: macos-26
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Toolchain
+        run: |
+          xcode-select -p
+          swift --version
+      - name: Test
+        run: scripts/test.sh
+      - name: Build app (ad-hoc signed)
+        run: scripts/build-app.sh
+      - name: Check entitlements
+        run: |
+          codesign -d --entitlements - build/Nook.app 2>/dev/null | tee entitlements.txt
+          if grep -q "network.server" entitlements.txt; then
+            echo "::error::Default build must not include the network.server entitlement"; exit 1
+          fi

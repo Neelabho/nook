@@ -1,0 +1,37 @@
+name: Bug report
+description: Something doesn't work as described
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Security problem? Please use **Security › Report a vulnerability** instead of a public issue."
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open the Shelf\n2. Drag a PDF from Finder\n3. …"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version and Mac model
+      placeholder: "macOS 26.1, MacBook Pro 14-inch (M4)"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Nook version or commit
+  - type: textarea
+    id: selftest
+    attributes:
+      label: Output of `Nook --self-test` (optional)
+      description: Remove anything personal before pasting. Nook already redacts paths, but double-check.
+      render: text

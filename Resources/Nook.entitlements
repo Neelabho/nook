@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- App Sandbox: Nook can only touch its own container plus files you drop, pick or save to. -->
+	<key>com.apple.security.app-sandbox</key>
+	<true/>
+	<!-- Outgoing connections only: loopback Ollama and (optionally) Spotify artwork over HTTPS. No server entitlement. -->
+	<key>com.apple.security.network.client</key>
+	<true/>
+	<!-- Save As / Move To / Add Files via the system file panels. -->
+	<key>com.apple.security.files.user-selected.read-write</key>
+	<true/>
+	<!-- Apple Events to Spotify only. -->
+	<key>com.apple.security.automation.apple-events</key>
+	<true/>
+	<key>com.apple.security.temporary-exception.apple-events</key>
+	<array>
+		<string>com.spotify.client</string>
+	</array>
+</dict>
+</plist>
