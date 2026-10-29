@@ -14,9 +14,9 @@
 
 | | |
 |---|---|
-| 🗂 **Shelf** | A holding area for files, folders, text and notes. Drag things in from anywhere, drag them out where they belong. Nook keeps its own verified copy, never touches the original, and anything you remove stays recoverable for 7 days. |
-| 🤖 **Assistant** | Chat with a local model (Qwen 3 8B or any model you have) through [Ollama]. Streaming, stop, Markdown, code copy, one-click actions like *Explain*, *Shorten* and *Review code*. **Nothing leaves your Mac.** |
-| 🎵 **Music** | Spotify controls with album art, a spinning vinyl, and an optional in-notch catalogue search. While a song plays, the closed notch shows the cover and a live waveform. |
+| **Shelf** | A holding area for files, folders, text and notes. Drag things in from anywhere, drag them out where they belong. Nook keeps its own verified copy, never touches the original, and anything you remove stays recoverable for 7 days. |
+| **Assistant** | Chat with a local model (Qwen 3 8B or any model you have) through [Ollama]. Streaming, stop, Markdown, code copy, one-click actions like *Explain*, *Shorten* and *Review code*. **Nothing leaves your Mac.** |
+| **Music** | Spotify controls with album art, a spinning vinyl, and an optional in-notch catalogue search. While a song plays, the closed notch shows the cover and a live waveform. |
 
 Native Swift 6 · SwiftUI + AppKit · App Sandbox · hardened runtime · no third-party dependencies · no telemetry · no account.
 
@@ -76,21 +76,21 @@ Run the built-in self-test (it runs inside the real sandbox with temporary data 
 
 ## Using Nook
 
-**Opening and closing**: hover over the notch, press ⌥⌘N, or use the menu bar icon. The panel closes when the pointer leaves (after the close delay), when you press Esc, or when you click elsewhere. 📌 keeps it open. ⤢ switches to a larger panel. ⌘1/⌘2/⌘3 switch tabs.
+**Opening and closing**: hover over the notch, press ⌥⌘N, or use the menu bar icon. The panel closes when the pointer leaves (after the close delay), when you press Esc, or when you click elsewhere. **Pin open** keeps it open. **Larger panel** switches to a bigger view. ⌘1/⌘2/⌘3 switch tabs.
 
 **Shelf**
-- *Add*: drag files, folders, text or images onto the notch; it opens as a drop target. You can also use **+** (file picker), the clipboard button or ⌘V, or ✎ for a new note. Nook always stores its **own copy**; the original is never moved or modified.
+- *Add*: drag files, folders, text or images onto the notch; it opens as a drop target. You can also use **+** (file picker), the clipboard button or ⌘V, or **New Note**. Nook always stores its **own copy**; the original is never moved or modified.
 - *Get things out*: drag a tile to Finder, the Desktop or any app that accepts files. Text items drop as text; hold ⌥ when you start dragging to drop a `.txt` file instead. ⌘-click or ⇧-click selects several items.
 - *Explicit transfer*: right-click a tile for **Save a Copy As…**, **Move To…**, Copy, Quick Look, Show in Finder or Remove. Space opens Quick Look, Delete removes, ←/→ move the selection.
-- *After a drag-out*, an item is hidden **only if the destination reported that it accepted the drop**, and stays recoverable under *⋯ › Recently Removed* for 7 days by default.
+- *After a drag-out*, an item is hidden **only if the destination reported that it accepted the drop**, and stays recoverable under *More Shelf actions (…) › Recently Removed* for 7 days by default.
 
-**Assistant**: type a question, or paste text and choose Explain, Improve, Shorten, Friendlier, More formal, Summarize, Review code, Explain error or Format code. Replies stream in; ■ (or ⌘.) stops one. Every reply has **Copy** and **To Shelf** buttons. 📖 opens the prompt scratchpad. When a model is in memory, the header shows its size and **Unload** frees it immediately.
+**Assistant**: type a question, or paste text and choose Explain, Improve, Shorten, Friendlier, More formal, Summarize, Review code, Explain error or Format code. Replies stream in; **Stop generating** (or ⌘.) stops one. Every reply has **Copy** and **To Shelf** buttons. **Prompt scratchpad** holds prompts you reuse. When a model is in memory, the header shows its size and **Unload** frees it immediately.
 
 **Music**: play/pause, previous/next, seek and volume. The record spins only while Spotify is playing, and not at all with Reduce Motion on.
 
 **Now playing on the closed notch**: while Spotify plays, the closed notch widens to show the album cover on the left and moving waves on the right, for 2 minutes after the panel closes and whenever the track changes. Turn it off in *Settings › Music › Closed notch*.
 
-**Search Spotify**: 🔍 in the Music tab (⌘F).
+**Search Spotify**: click the magnifying glass in the Music tab, or press ⌘F.
 - *Without setup:* **Search in Spotify app** opens Spotify's own search for your text.
 - *In-Nook results* (optional, uses your own free Spotify developer app):
   1. Create an app at [developer.spotify.com/dashboard](https://developer.spotify.com/dashboard). Spotify requires the **app owner to have Premium** for development-mode apps.
